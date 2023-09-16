@@ -1,0 +1,22 @@
+{
+  "name": "my-first-beth-app",
+  "module": "index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch ./src/index.tsx",
+    "db:push": "bunx drizzle-kit push:sqlite",
+    "db:studio": "bunx drizzle-kit studio"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.19.13",
+    "typed-html": "^3.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.6.5",
+    "elysia": "^0.6.23"
+  }
+}
